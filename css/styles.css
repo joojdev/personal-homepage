@@ -1,0 +1,68 @@
+@font-face {
+  font-family: 'Monofonto';
+  src: url('./Monofonto.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Monofonto', 'Courier New', Courier, monospace;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background-color: #494949;
+  background-image: var(--background-image);
+  backdrop-filter: brightness(.6);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+header {
+  width: 80vw;
+}
+
+#searchInput {
+  width: 100%;
+  padding: 10px 25px;
+  background: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px rgba(20, 20, 20, 0.456);
+  font-size: 1em;
+}
+
+#clock {
+  color: var(--clock-color);
+  font-size: 6em;
+  text-shadow: 3px 3px 10px rgba(20, 20, 20, 0.456);
+}
+
+#appList {
+  display: flex;
+  gap: 25px;
+}
+
+.shortcut {
+  width: 80px;
+  cursor: pointer;
+  filter: invert(1) drop-shadow(3px 3px 10px rgba(20, 20, 20, 0.456));
+  transition: .2s;
+}
+
+.shortcut:hover {
+  transform: scale(1.1);
+}
