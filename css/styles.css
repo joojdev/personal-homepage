@@ -58,6 +58,10 @@ header {
   font-size: 1em;
 }
 
+#searchInput:focus {
+  outline: none;
+}
+
 #clock {
   color: var(--clock-color);
   font-size: 6em;

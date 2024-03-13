@@ -110,6 +110,7 @@ function startEverything() {
   startClock()
   loadApps()
   changeTheme()
+  searchInput.focus()
 }
 
 document.onload = startEverything()
