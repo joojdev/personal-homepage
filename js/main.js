@@ -87,7 +87,7 @@ function loadTheme(theme) {
 }
 
 function changeTheme() {
-  if (!localStorage.getItem('currentTheme')) return localStorage.setItem('currentTheme', 0)
+  if (!localStorage.getItem('currentTheme')) localStorage.setItem('currentTheme', 0)
 
   const currentTheme = parseInt(localStorage.getItem('currentTheme'))
   switch(currentTheme) {
